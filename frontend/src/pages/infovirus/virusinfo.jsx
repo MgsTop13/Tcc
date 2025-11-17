@@ -1,6 +1,7 @@
 import BackgroundBlack from "/images/Black/BackgroundBlack.png";
 import BackgroundWhite from "/images/White/BackgroundWhite.png";
 import CardPublicacao from "../../components/card/card.jsx";
+import Footer from "../../components/footer/index.jsx";
 import Cabecalho2 from "../../components/HeaderPages";
 import Modal from "../../components/err/index.jsx";
 import { useState, useEffect } from "react";
@@ -205,6 +206,7 @@ export default function VR() {
         setModalOpen={() => setShowModal(!showModal)}
         codigoErro={codigoErro}
       />
+      <Footer darkTheme={darkTheme} onChangeTheme={ChangeTheme}/>
     </main>
   );
 }

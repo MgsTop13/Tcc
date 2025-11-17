@@ -1,8 +1,9 @@
 import BackgroundBlack from "/images/Black/BackgroundBlack.png";
 import BackgroundWhite from "/images/White/BackgroundWhite.png";
+import Footer from "../../components/footer/index.jsx";
 import Cabecalho2 from '../../components/HeaderPages';
-import { Link, useNavigate } from 'react-router';
 import Modal from "../../components/err/index.jsx";
+import { Link, useNavigate } from 'react-router';
 import { useState, useEffect } from 'react';
 import apiLink from "../../axios";
 import './Login.scss';
@@ -113,6 +114,7 @@ function Login() {
         </section>
         <Modal isOpen={showModal} setModalOpen={() => setShowModal(!showModal)} codigoErro={codigoErro}></Modal>
       </section>
+      <Footer darkTheme={darkTheme} onChangeTheme={ChangeTheme}/>
     </main>
   )
 }

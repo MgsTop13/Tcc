@@ -1,11 +1,12 @@
-import BackgroundBlack from "/images/Black/BackgroundBlack.png"
-import BackgroundWhite from "/images/White/BackgroundWhite.png"
-import Cabecalho2 from "../../components/HeaderPages"
-import Modal from "../../components/err/index.jsx"
-import { useState, useEffect } from "react"
-import { useNavigate } from "react-router"
-import apiLink from "../../axios"
-import "./userSupport.scss"
+import BackgroundBlack from "/images/Black/BackgroundBlack.png";
+import BackgroundWhite from "/images/White/BackgroundWhite.png";
+import Footer from "../../components/footer/index.jsx";
+import Cabecalho2 from "../../components/HeaderPages";
+import Modal from "../../components/err/index.jsx";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router";
+import apiLink from "../../axios";
+import "./userSupport.scss";
 
 export default function UserSupport() {
   const navigate = useNavigate();
@@ -225,6 +226,7 @@ export default function UserSupport() {
         setModalOpen={() => setShowModal(!showModal)}
         codigoErro={codigoErro}
       />
+      <Footer darkTheme={darkTheme} onChangeTheme={ChangeTheme}/>
     </main>
   );
 }

@@ -1,9 +1,10 @@
 import BackgroundBlack from "/images/Black/BackgroundBlack.png";
 import BackgroundWhite from "/images/White/BackgroundWhite.png";
+import Footer from "../../components/footer/index.jsx";
 import Cabecalho2 from "../../components/HeaderPages";
 import Modal from "../../components/err/index.jsx";
-import apiLink from "../../axios.js";
 import { useEffect, useState } from "react";
+import apiLink from "../../axios.js";
 import "../../scss/global.scss";
 import "../../scss/fonts.scss";
 import "./verify.scss";
@@ -319,6 +320,7 @@ export default function Verify() {
         setModalOpen={() => setShowModal(!showModal)}
         codigoErro={codigoErro}
       />
+      <Footer darkTheme={darkTheme} onChangeTheme={ChangeTheme}/>
     </main>
   );
 }

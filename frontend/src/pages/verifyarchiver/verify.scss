@@ -49,13 +49,13 @@ body {
     }
 
     .header-pages {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
         background-color: var(--header-bg, #6892c196);        
-        z-index: 1000;
         padding: 0.5rem 1rem;
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        left: 0;
+        top: 0;
         
         &.dark {
             --header-bg: #112a4396;
@@ -63,11 +63,12 @@ body {
     }
 
     .page-archiver {
-        width: 100%;
-        max-width: 1500px;
-        display: flex;
         justify-content: center;
         align-items: center;
+        max-width: 1500px;
+        margin-bottom: 20px;
+        display: flex;
+        width: 100%;
         flex: 1;
 
         .card-archiver {

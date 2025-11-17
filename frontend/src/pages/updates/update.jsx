@@ -1,11 +1,12 @@
-import BackgroundBlack from "/images/Black/BackgroundBlack.png"
-import BackgroundWhite from "/images/White/BackgroundWhite.png"
-import Cabecalho2 from "../../components/HeaderPages"
-import Modal from "../../components/err/index.jsx"
-import Mgs from "/images/icons/MgsPensativo.png"
-import { useState, useEffect } from "react"
-import "./update.scss"
-import apiLink from "../../axios"
+import BackgroundBlack from "/images/Black/BackgroundBlack.png";
+import BackgroundWhite from "/images/White/BackgroundWhite.png";
+import Footer from "../../components/footer/index.jsx";
+import Cabecalho2 from "../../components/HeaderPages";
+import Modal from "../../components/err/index.jsx";
+import Mgs from "/images/icons/MgsPensativo.png";
+import { useState, useEffect } from "react";
+import apiLink from "../../axios";
+import "./update.scss";
 
 export default function Updates() {
     const [darkTheme, setDarkTheme] = useState(() => {
@@ -108,6 +109,7 @@ export default function Updates() {
                 setModalOpen={() => setShowModal(!showModal)}
                 codigoErro={codigoErro}
             />
+            <Footer  darkTheme={darkTheme} onChangeTheme={ChangeTheme}/>
         </main>
     );
 }

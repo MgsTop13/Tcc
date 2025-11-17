@@ -1,10 +1,10 @@
-import BackgroundBlack from "/images/Black/BackgroundBlack.png"
-import BackgroundWhite from "/images/White/BackgroundWhite.png"
-import CabecalhoAdmin from "../../../components/headerAdmin"
-import { useState, useEffect } from "react"
-import { Link, useNavigate } from "react-router"
-import apiLink from "../../../axios"
-import "./homeAdmin.scss"
+import BackgroundBlack from "/images/Black/BackgroundBlack.png";
+import BackgroundWhite from "/images/White/BackgroundWhite.png";
+import CabecalhoAdmin from "../../../components/headerAdmin";
+import Footer from "../../../components/footer/index.jsx";
+import { Link, useNavigate } from "react-router";
+import { useState, useEffect } from "react";
+import "./homeAdmin.scss";
 
 export default function HomeAdmin() {
     const user = localStorage.getItem('User')
@@ -90,6 +90,7 @@ export default function HomeAdmin() {
                     </div>
                 ))}
             </section>
+            <Footer darkTheme={darkTheme} onChangeTheme={ChangeTheme}/>
         </main>
     )
 }

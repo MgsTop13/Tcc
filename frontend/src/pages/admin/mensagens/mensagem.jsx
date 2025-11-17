@@ -1,10 +1,11 @@
-import BackgroundBlack from "/images/Black/BackgroundBlack.png"
-import BackgroundWhite from "/images/White/BackgroundWhite.png"
-import CabecalhoAdmin2 from "../../../components/headerAdmin2"
-import { useState, useEffect } from "react"
-import { useNavigate } from "react-router"
-import apiLink from "../../../axios"
-import "./mensagem.scss"
+import BackgroundBlack from "/images/Black/BackgroundBlack.png";
+import BackgroundWhite from "/images/White/BackgroundWhite.png";
+import CabecalhoAdmin2 from "../../../components/headerAdmin2";
+import Footer from "../../../components/footer/index";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router";
+import apiLink from "../../../axios";
+import "./mensagem.scss";
 
 export default function MsgSupport() {
 
@@ -229,6 +230,7 @@ export default function MsgSupport() {
           </div>
         </div>
       </div>
+      <Footer darkTheme={darkTheme} onChangeTheme={ChangeTheme}/>
     </main>
   )
 }

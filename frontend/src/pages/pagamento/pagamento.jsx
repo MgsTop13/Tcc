@@ -1,11 +1,12 @@
 import BackgroundBlack from "/images/Black/BackgroundBlack.png";
 import BackgroundWhite from "/images/White/BackgroundWhite.png";
+import Footer from "../../components/footer/index.jsx";
 import Cabecalho2 from '../../components/HeaderPages';
 import Modal from "../../components/err/index.jsx";
-import apiLink from "../../axios.js";
-import './pagamento.scss';
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router";
+import apiLink from "../../axios.js";
+import './pagamento.scss';
 
 export default function Pagamento() {
     const navigate = useNavigate();
@@ -325,6 +326,7 @@ export default function Pagamento() {
                 setModalOpen={() => setShowModal(!showModal)}
                 codigoErro={codigoErro}
             />
+            <Footer darkTheme={darkTheme} onChangeTheme={ChangeTheme}/>
         </main>
     );
 }

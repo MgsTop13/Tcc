@@ -1,9 +1,10 @@
 import CabecalhoAdmin2 from "../../../components/headerAdmin2";
 import BackgroundBlack from "/images/Black/BackgroundBlack.png";
 import BackgroundWhite from "/images/White/BackgroundWhite.png";
-import apiLink from "../../../axios.js";
 import { useState, useEffect } from "react";
+import Footer from "../../../components/footer/index.jsx";
 import { useNavigate } from "react-router";
+import apiLink from "../../../axios.js";
 import "./addInfosVirus.scss";
 
 export default function AddVirus() {
@@ -109,7 +110,7 @@ export default function AddVirus() {
   }, [selectedId]);
 
   return (
-    <main className={`MainCadastro ${darkTheme ? "dark" : "light"}`}>
+    <main className={`MainAdd ${darkTheme ? "dark" : "light"}`}>
       <CabecalhoAdmin2 darkTheme={darkTheme} onChangeTheme={ChangeTheme} />
 
       <div className="criar-container">
@@ -172,6 +173,7 @@ export default function AddVirus() {
           </button>
         </div>
       </div>
+      <Footer darkTheme={darkTheme} onChangeTheme={ChangeTheme}/>
     </main>
   );
 }

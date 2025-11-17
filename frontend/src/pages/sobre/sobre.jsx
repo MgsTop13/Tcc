@@ -1,11 +1,11 @@
-import '../../scss/global.scss'
-import '../../scss/fonts.scss'
+import BackgroundBlack from "/images/Black/BackgroundBlack.png";
+import BackgroundWhite from "/images/White/BackgroundWhite.png";
+import Cabecalho2 from "../../components/HeaderPages";
+import Footer from '../../components/footer';
+import { useEffect, useState } from 'react';
+import '../../scss/global.scss';
+import '../../scss/fonts.scss';
 import './sobre.scss'
-import Cabecalho2 from "../../components/HeaderPages"
-import Footer from '../../components/footer'
-import BackgroundBlack from "/images/Black/BackgroundBlack.png"
-import BackgroundWhite from "/images/White/BackgroundWhite.png"
-import { useEffect, useState } from 'react'
 
 export default function Sobre() {
     const [darkTheme, setDarkTheme] = useState(() => {

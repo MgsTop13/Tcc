@@ -1,11 +1,12 @@
 import BackgroundBlack from "/images/Black/BackgroundBlack.png";
 import BackgroundWhite from "/images/White/BackgroundWhite.png";
+import Footer  from "../../components/footer/index.jsx";
 import Cabecalho2 from "../../components/HeaderPages";
 import Modal from "../../components/err/index.jsx";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router";
 import apiLink from "../../axios.js";
 import "./recuperador.scss";
-import { useState, useEffect } from "react";
 
 export default function RecuperadorDeSenhas() {
   const [darkTheme, setDarkTheme] = useState(() => {
@@ -147,6 +148,7 @@ export default function RecuperadorDeSenhas() {
           codigoErro={codigoErro}
         />
       )}
+      <Footer  darkTheme={darkTheme} onChangeTheme={ChangeTheme}/>
     </main>
   );
 }

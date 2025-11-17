@@ -1,11 +1,12 @@
-import Cabecalho2 from "../../components/HeaderPages";
 import BackgroundBlack from "/images/Black/BackgroundBlack.png";
 import BackgroundWhite from "/images/White/BackgroundWhite.png";
+import Footer from "../../components/footer/index.jsx";
+import Cabecalho2 from "../../components/HeaderPages";
 import Modal from "../../components/err/index.jsx";
-import "./support.scss";
-import apiLink from "../../axios.js";
 import { useState, useEffect } from "react";
+import apiLink from "../../axios.js";
 import { Link } from "react-router";
+import "./support.scss";
 
 export default function Support() {
   const [opcaoEscolhida, setOpcaoEscolhida] = useState("");
@@ -132,6 +133,7 @@ export default function Support() {
           codigoErro={codigoErro}
         />
       )}
+      <Footer  darkTheme={darkTheme} onChangeTheme={ChangeTheme}/>
     </main>
   );
 }

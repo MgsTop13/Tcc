@@ -1,6 +1,7 @@
 import BackgroundBlack from "/images/Black/BackgroundBlack.png";
 import BackgroundWhite from "/images/White/BackgroundWhite.png";
 import Cabecalho2 from "../../components/HeaderPages/";
+import Footer from "../../components/footer/index.jsx";
 import Modal from "../../components/err/index.jsx";
 import React, { useState, useEffect } from "react";
 import apiLink from "../../axios";
@@ -228,6 +229,7 @@ export default function PasswordGenerator() {
         setModalOpen={() => setShowModal(!showModal)}
         codigoErro={codigoErro}
       />
+      <Footer  darkTheme={darkTheme} onChangeTheme={ChangeTheme}/>
     </main>
   );
 }

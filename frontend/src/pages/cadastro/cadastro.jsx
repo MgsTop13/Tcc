@@ -1,10 +1,11 @@
-import Cabecalho from '../../components/HeaderPages'
-import { useNavigate } from 'react-router'
-import { Link } from 'react-router';
-import { useState, useEffect } from 'react'
 import BackgroundBlack from "/images/Black/BackgroundBlack.png";
 import BackgroundWhite from "/images/White/BackgroundWhite.png";
-import Modal from "../../components/err"
+import Cabecalho from '../../components/HeaderPages';
+import Footer from "../../components/footer/index";
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router';
+import Modal from "../../components/err";
+import { Link } from 'react-router';
 import apiLink from '../../axios';
 import './cadastro.scss';
 
@@ -176,6 +177,7 @@ function Cas() {
         </div>
         </div>
       </section>
+      <Footer darkTheme={darkTheme} onChangeTheme={ChangeTheme}/>
     </main>
   )
 }

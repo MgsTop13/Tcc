@@ -1,4 +1,6 @@
 .MainAdminUpdate {
+    min-height: 100vh;
+    flex-direction: column;
     --card-hover-shadow: -1px 10px 10px #000000ea;
     --card-shadow: -2px 3px 2px #00000077;
     --paragraph-color: #333333;
@@ -41,9 +43,6 @@
         --link-hover: #93C5FD;
     }
 
-    min-height: 100vh;
-    padding: 2rem;
-
     .header-pages {
         padding: 0.5rem 1rem;
         position: absolute;
@@ -58,6 +57,7 @@
         background-color: var(--card-bg);
         box-shadow: var(--card-shadow);
         margin-top: 10% !important;
+        margin-bottom: 5%;
         transition: all 0.3s ease;
         border-radius: 15px;
         max-width: 600px;

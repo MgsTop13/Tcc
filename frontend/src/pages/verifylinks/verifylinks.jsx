@@ -1,12 +1,13 @@
-import '../../scss/global.scss'
-import '../../scss/fonts.scss'
-import './verifylinks.scss'
-import apiLink from '../../axios'
-import Cabecalho2 from '../../components/HeaderPages'
+import BackgroundBlack from "/images/Black/BackgroundBlack.png";
+import BackgroundWhite from "/images/White/BackgroundWhite.png";
+import Footer from "../../components/footer/index.jsx";
+import Cabecalho2 from '../../components/HeaderPages';
 import Modal from "../../components/err/index.jsx";
-import BackgroundBlack from "/images/Black/BackgroundBlack.png"
-import BackgroundWhite from "/images/White/BackgroundWhite.png"
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
+import apiLink from '../../axios';
+import '../../scss/global.scss';
+import '../../scss/fonts.scss';
+import './verifylinks.scss';
 
 export default function VerifyLinks() {
   const [darkTheme, setDarkTheme] = useState(() => {
@@ -284,6 +285,7 @@ export default function VerifyLinks() {
         setModalOpen={() => setShowModal(!showModal)}
         codigoErro={codigoErro}
       />
+      <Footer darkTheme={darkTheme} onChangeTheme={ChangeTheme}/>
     </main>
   );
 }

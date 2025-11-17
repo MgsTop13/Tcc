@@ -1,10 +1,11 @@
-import BackgroundBlack from "/images/Black/BackgroundBlack.png"
-import BackgroundWhite from "/images/White/BackgroundWhite.png"
-import CabecalhoAdmin2 from "../../../components/headerAdmin2"
-import { useNavigate } from "react-router"
-import { useState, useEffect, use } from "react"
-import "./updateAdmin.scss"
-import apiLink from "../../../axios.js"
+import BackgroundBlack from "/images/Black/BackgroundBlack.png";
+import BackgroundWhite from "/images/White/BackgroundWhite.png";
+import CabecalhoAdmin2 from "../../../components/headerAdmin2";
+import Footer from "../../../components/footer/index.jsx";
+import { useState, useEffect, use } from "react";
+import { useNavigate } from "react-router";
+import apiLink from "../../../axios.js";
+import "./updateAdmin.scss";
 
 export default function UpdateAdmin() {
   //Verificação ADM
@@ -98,6 +99,7 @@ export default function UpdateAdmin() {
                         <button className="buttton" onClick={InserirUpdate}>Enviar Atualização</button>
                     </div>
                 </div>
+                <Footer className="footer" darkTheme={darkTheme} onChangeTheme={ChangeTheme}/>
         </main>
     )
 }
