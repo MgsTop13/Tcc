@@ -33,7 +33,7 @@ function Login() {
   
   async function Enviarlogin() {
     try {
-      const resposta = await apiLink.post('/Login', {
+      const resposta = await apiLink.post('/login', {
         nome,
         email,
         senha
