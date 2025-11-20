@@ -1,6 +1,6 @@
 drop database Tcc;
 create database Tcc;
-use Tcc;
+use ;
 
 create table cadastro(
     id_cadastro int primary key auto_increment,

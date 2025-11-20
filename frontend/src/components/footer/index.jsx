@@ -1,7 +1,5 @@
 import "./index.scss";
 import { Link } from "react-router";
-import brightness from "/images/Black/brightness.png";
-import brightnessWhite from "/images/White/brightnessWhite.png";
 
 export default function Footer({ darkTheme, onChangeTheme }) {
     return (

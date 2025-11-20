@@ -49,17 +49,12 @@ body {
     }
 
     .header-pages {
-        background-color: var(--header-bg, #6892c196);        
         padding: 0.5rem 1rem;
-        position: fixed;
+        position: absolute;
         z-index: 1000;
         width: 100%;
         left: 0;
         top: 0;
-        
-        &.dark {
-            --header-bg: #112a4396;
-        }
     }
 
     .page-archiver {
@@ -235,6 +230,11 @@ body {
             }
         }
     }
+    .footer-home{
+        position: absolute;
+        top: 97%;
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -285,6 +285,7 @@ body {
                 }
             }
         }
+
     }
 }
 

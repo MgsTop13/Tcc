@@ -1,6 +1,6 @@
 import BackgroundBlack from "/images/Black/BackgroundBlack.png";
 import BackgroundWhite from "/images/White/BackgroundWhite.png";
-import Footer from "../../components/footer/index.jsx";
+import Footer from '../../components/footer'
 import Cabecalho2 from "../../components/HeaderPages";
 import Modal from "../../components/err/index.jsx";
 import { useEffect, useState } from "react";
@@ -314,13 +314,13 @@ export default function Verify() {
           </button>
         </div>
       </section>
+      <Footer darkTheme={darkTheme} className='a' />
 
       <Modal
         isOpen={showModal}
         setModalOpen={() => setShowModal(!showModal)}
         codigoErro={codigoErro}
       />
-      <Footer darkTheme={darkTheme} onChangeTheme={ChangeTheme}/>
     </main>
   );
 }
