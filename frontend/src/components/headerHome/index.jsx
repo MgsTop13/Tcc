@@ -40,13 +40,13 @@ export default function Cabecalho({ darkTheme, onChangeTheme, AdminVerify }) {
 
     const [img90Dg, setImg90Dg] = useState(false);
     function MoverImg() {
-        if (img90Dg === false) {
-            document.getElementById('imgsun').style.transform = 'rotate(220deg)';
+        if(img90Dg == false){
+            document.getElementById('imgsun').style.transform = 'rotate(120deg)';
             setImg90Dg(true);
-        }
-        else {
-            document.getElementById('imgsun').style.transform = 'rotate(-25deg)';
-            setImg90Dg(false)
+        } 
+        else{
+            document.getElementById('imgsun').style.transform = 'rotate(-20deg)';
+            setImg90Dg(false);
         }
     }
 

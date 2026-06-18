@@ -11,7 +11,7 @@ export default function Cabecalho2({ darkTheme, onChangeTheme }) {
 
     const [img90Dg, setImg90Dg] = useState(false)
     function MoverImg() {
-        if (img90Dg === false) {
+        if (img90Dg == false) {
             document.getElementById('imgsun').style.transform = 'rotate(220deg)';
             setImg90Dg(true);
         }
